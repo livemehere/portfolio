@@ -48,9 +48,16 @@ a{
     color: var(--color-white);
 }
 
+button{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
 /* img size */
 .logo_icon{
-    width: 20px;
+    width: 25px;
     margin-right: 5px;
 }
 /* Typography */
@@ -87,7 +94,7 @@ h1 {
 #navbar{
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
+    background-color: var(--color-grey);
     align-items: center;
     color: var(--color-white);
     padding: 16px;
@@ -116,6 +123,35 @@ h1 {
 }
 
 .navbar__menu__item:hover{
-    background-color: var(--color-dark-pink);
+    background-color: var(--color-light-grey);
     
+}
+
+/* Home */
+#home{
+    background: url(/imgs/bg.png) center/cover;
+    padding: 40px;
+    text-align: center;
+}
+
+.home__avatar{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.home__title,
+.home__description{
+    color: var(--color-white);
+}
+
+.home__contact{
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: var(--size-border-radius);
+    color: var(--color-white);
 }
