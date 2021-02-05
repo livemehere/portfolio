@@ -58,7 +58,7 @@ arrowUp.addEventListener('click',()=>{
     scrollIntoView('#home')
 });
 
-// Projects
+// Projects filtering
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
@@ -68,6 +68,13 @@ workBtnContainer.addEventListener('click',(event)=>{
     if(filter== null){
         return;
     }
+
+    // 선택취소 후 새로운 선택버튼에 선택영역지정하기
+    const selected = document.querySelector('.category__btn.selected');
+    selected.classList.remove('selected');
+    const target = event.target.nodeName ==='BUTTON' ? event.target : event.target.parentNode;
+    target.classList.add('selected');
+
     projectContainer.classList.add('animation-out');
     
     setTimeout(()=>{

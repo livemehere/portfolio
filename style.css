@@ -130,15 +130,12 @@ h1 {
     margin: 0 4px;
     cursor: pointer;
     border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active{
-    border: 1px solid var(--color-white);
-    
+    border: 1px solid transparent;
 }
 
 .navbar__menu__item:hover{
     background-color: var(--color-light-grey);
+    border-color: var(--color-white);
     
 }
 
@@ -322,13 +319,13 @@ background-color: var(--color-orange);
     padding: 8px 48px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover{
     background-color:var(--color-pink);
     color: var(--color-white);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count{
     top: 0;
     opacity: 1;
