@@ -480,7 +480,26 @@ background-color: var(--color-orange);
     color: var(--color-yellow);
 }
 
+.arrow-up{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all var(--animation-duration) ease-in;
+    pointer-events: none;
+}
 
+.arrow-up.visible{
+    opacity: 1;
+    display: block;
+    pointer-events:auto;
+}
 
 @media screen and (max-width:768px){
     .navbar__toggle-btn{
