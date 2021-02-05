@@ -227,6 +227,11 @@ h1 {
 .major__title,
 .major__description{
     color: var(--color-dark-grey);
+    
+}
+
+.major{
+    width: 300px;
 }
 
 .major__description{
@@ -466,7 +471,7 @@ background-color: var(--color-orange);
 }
 
 #contact{
-    background-color:var(--color-pink);
+    background-color:var(--color-light-grey);
 }
 
 .contact__title,
@@ -501,7 +506,7 @@ background-color: var(--color-orange);
     width: 70px;
     height: 70px;
     font-size: 50px;
-    background-color: var(--color-pink);
+    background-color: var(--color-dark-grey);
     color: var(--color-white);
     border-radius: 50%;
     opacity: 0;
