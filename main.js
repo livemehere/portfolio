@@ -34,3 +34,12 @@ homeContactBtn.addEventListener('click',()=>{
     scrollIntoView('#contact')
 })
 
+// 스크롤시 투명해지기 
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+
+document.addEventListener('scroll',()=>{
+    home.style.opacity = 1 - window.scrollY/homeHeight;
+    
+});
+
