@@ -151,7 +151,7 @@ h1 {
 
 /* Home */
 #home{
-    background: url(/imgs/bg.png) center/cover;
+    background: url(imgs/bg.png) center/cover;
     padding: 40px;
     text-align: center;
 }
