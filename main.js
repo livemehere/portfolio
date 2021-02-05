@@ -11,6 +11,12 @@ document.addEventListener('scroll',()=>{
     }
 })
 
+// function declaration to scroll by ID
+function scrollIntoView(selector){
+    const contactPos = document.querySelector(selector);
+    contactPos.scrollIntoView({behavior:'smooth'});
+};
+
 // Handle scrolling when tapping on the navbar menu
 const navbarMenu = document.querySelector('.navbar__menu');
 navbarMenu.addEventListener('click',(event)=>{
@@ -18,8 +24,13 @@ navbarMenu.addEventListener('click',(event)=>{
     if(target == null){
         return;
     }
-    const scrollTo = document.querySelector(target);
-    scrollTo.scrollIntoView({behavior:'smooth'});
+    scrollIntoView(target);
     console.log(event.target.dataset.links);
-
 })
+
+// Handle click on 'contact me' button on home
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click',()=>{
+    scrollIntoView('#contact')
+})
+
